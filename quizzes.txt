@@ -1,0 +1,50 @@
+1. I need to `import React from "react"` in my files to have access to the React library, and for JSX to render properly onto the screen (DOM)
+
+2. console.log(page) would show the pure Javascript code, likely the object(s) used in the code
+
+3. code fix:
+	there are two elements in const page, and won't render unless wrapped in one element (<div>)
+
+4. declarative coding: tell the puter what you want to run and it figures out how to display the code (React); imperative coding: tell the puter what to run and how to run it step by step (HTML, JS, CSS)
+
+5. Composable? creating small pieces to create a bigger whole (ex. the lego sculpture of David vice the marble sculpture from a large stone)
+
+|||||||||||||||||||||||||||||||||||||||||
+
+1. A React component is used like a function, a small piece of the larger construct that can be used repeatedly by calling the function
+
+2. Code edit: the function name is camelCase instead of PascalCase
+
+3. Code edit: function component being called in the ReactDOM should have brackets, instead of calling the function.
+
+||||||||||||||||||||||||||||||||||||||||||
+
+1. What do props help us accomplish?
+Props reduce code redundancy by allowing you to edit styles for all at the same time, while different info is present in the element
+---
+Like parameters being passed into function, props help components be more reusable
+
+2. How do you pass a prop into a component?
+Component(props) {}, then prop.Object to call specifics from parent component
+
+3. Can I pass a custom prop to a native DOM element? Why/why not?
+Yes, because that's how I can link an image using props
+---
+NO. When React sees regular HTML, the object created is text. No, because the JSX we use to describe native DOM elemnts will be turned into REAL DOM elements by React. And real DOM elements only have the properties/attributes specified int he HTML specification.
+
+4. How do I receive props in a component?
+You receive props by first including 'props' as an argument (Component(props)), then by calling specific attributes ({props.img}).
+
+||||||||||||||||||||||||||||||||||||||||||
+
+1. What does the `.map()` array method do?
+- Iterates across an array, like a 'for' loop, and returns results in another declared array
+- Returns a new array - whatever gets returned from the callback function is placed at the same index of the new array. Usually the array items are modified.
+
+2. What do we usually use `.map()` for in React?
+- Populate data using 'props' instead of hard coding data repeatedly
+- Convert an array of raw data into an array of JSX elements that can be displayed on the page
+
+3. Why is using `.map()` better than just creating the components manually by typing them out?
+- If I have to change styling or information, I won't have to code every iteration seperately
+- My code is more self-sustaining - not requiring additional changes whenever data changes
