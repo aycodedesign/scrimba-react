@@ -13,6 +13,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-family: "Poppins", sans-serif;
 	background: white;
 	width: 550px;
 	height: 704px;
@@ -23,8 +24,35 @@ code {
 		monospace;
 }
 
+p {
+	color: #2b283a;
+}
+
 nav {
+	position: relative;
 	width: 100%;
 	height: 55px;
 	background: #f55a5a;
+	color: #1d1717;
+	font-weight: 400;
+	font-size: 15px;
+	box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding-top: 16px;
+}
+
+.card--container {
+	margin: 45px 40px 28px 40px;
+}
+
+.card {
+	display: block;
+	height: 231px;
+	vertical-align: center;
+	outline: 1px red solid;
+}
+
+.card--info {
+	display: inline-block;
+	margin-left: 19px;
 }

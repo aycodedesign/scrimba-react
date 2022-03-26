@@ -1,12 +1,30 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Card from './components/Card';
+import data from "./data.js";
+
 
 export default function App() {
+  const cardElement = data.map(item => {
+    return (
+      <Card
+        key={ item.id }
+        item={ item }
+      // title={ item.title }
+      // location={ }
+      // googleMapsUrl={ }
+      // startDate={ }
+      // endDate={ }
+      // description={ }
+      // image={ }
+      />
+    )
+  })
+
   return (
     <>
-      <Navbar />
-      <Card />
+      <Header />
+      { cardElement }
     </>
   );
 }

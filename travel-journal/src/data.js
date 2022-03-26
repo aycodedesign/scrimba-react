@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: "Mount Fuji",
     location: "Japan",
     googleMapsUrl: "https://goo.gl/maps/6geTF9bhswkEUrYp9",
@@ -9,6 +10,7 @@ export default [
     image: "./images/mt-fuji.png",
   },
   {
+    id: 2,
     title: "Mount Fuji",
     location: "Japan",
     googleMapsUrl: "https://goo.gl/maps/6geTF9bhswkEUrYp9",
@@ -18,6 +20,7 @@ export default [
     image: "./images/mt-fuji.png",
   },
   {
+    id: 3,
     title: "Mount Fuji",
     location: "Japan",
     googleMapsUrl: "https://goo.gl/maps/6geTF9bhswkEUrYp9",
