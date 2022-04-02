@@ -65,7 +65,8 @@ nav {
 }
 
 .card--info {
-	padding-left: 19px;
+	/* padding-left: 19px; */
+	margin: 10px 0 auto 19px;
 	width: 326px;
 	height: 128px;
 }
